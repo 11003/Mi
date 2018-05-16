@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+	<style>
+/*重置属性*/
+*{ font-family:"微软雅黑"; font-size:14px; padding:0; margin:0;}
+img{ display:block;}
+a{ text-decoration:none;}
+a:hover{text-decoration:none;}
+ul{ list-style:none;}
+p,dl,dd{ margin:0; padding:0;}
+.star{
+	width: 1226px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.star .single{
+	width: 1226px;
+	float: left;
+	font-size: 24px;
+	margin-bottom: 19px;
+	overflow: hidden;
+}
+.single .right-btn{
+	margin-left: -1px;
+}
+.single .bg{
+	background: #666;
+}
+.right-btn,.left-btn{
+	float: right;
+	width: 35px;
+	height: 25px;
+	line-height: 25px;
+	border: 1px solid #e0e0e0;
+	background-color: #fff;
+}
+.right-btn img{
+	margin-top: 3px;
+	margin-left: 7px;
+}
+.left-btn img{
+	transform: rotate(180deg);
+	margin-top: 3px;
+	margin-left: 7px;
+}
+.right-btn:hover,
+.left-btn:hover{
+	opacity: 0.6;
+	cursor: pointer;
+}
+.star .products-box{
+	margin-left:auto; 
+	margin-right:0;
+	width:1226px; 
+	height:340px; 
+	overflow:hidden;
+}
+.star .products-box .products-bigbox{
+	width:3678px; 
+	height:340px; 
+	float:left;
+}
+.products-bigbox .products{
+	float:left;  
+	width:234px; 
+	height:340px; 
+	background-color:#fafafa; 
+	text-align:center;
+}
+/*各类商品顶部边框颜色、背景图片、边距、文字颜色、文字大小*/
+.t-orange{
+	border-top: 1px solid #f76120;
+	background: url('images/chazuo.png') no-repeat center 66px;
+}
+.t-yellow{
+	border-top: 1px solid yellow;
+	background: url('images/jinghuaqi.png') no-repeat center 44px;
+}
+.t-blue{
+	border-top: 1px solid #00f;
+	background: url('images/chaban.png') no-repeat center 90px;
+}
+.t-red{
+	border-top: 1px solid #f00;	
+	background: url('images/erji.png') no-repeat center 60px;
+}
+.t-green{
+	border-top: 1px solid green;
+	background: url('images/luyouqi.png') no-repeat center 50px;
+}
+.c-gray{
+	color: #b0b0b6;/*浅灰色*/
+	display: inline-block;
+	margin-top: 14px;
+	margin-bottom: 8px;
+}
+.f-s{
+	color: #ff6709;
+	font-size: 14px;
+}
+.mr14{
+	margin-right: 14px;
+}
+.mt230{
+	display: inline-block;
+	margin-top: 230px;
+}	
+	</style>
+
+</head>
+<body>
+	<div class="star">
+		<div class="single">
+			小米明星单品
+			<div class="right-btn" id="right-btn">
+				<img src="images/arrow-right.png">
+			</div>
+			<div class="left-btn" id="left-btn">
+				<img src="images/arrow-right.png">
+			</div>
+		</div>
+		<div class="products-box"><!-- class:itemlist -->
+			<ul class="products-bigbox" id="productsul"><!-- itemlistul -->
+				<li>
+					<div class="products t-orange mr14">
+						<span class="mt230">小米智能插座 基础班</span>
+						<p class="c-gray">手机远程遥控，让普通电器变智能</p>
+						<p class="f-s">49元</p>
+					</div>
+					<div class="products t-yellow mr14">
+						<span class="mt230">小米空气净化器2</span>
+						<p class="c-gray">净化能力高达310m3/h</p>
+						<p class="f-s">699元</p>
+					</div>
+					<div class="products t-blue mr14">
+						<span class="mt230">小米智能插线板</span>
+						<p class="c-gray">手机远程控制家中电器，智能节电</p>
+						<p class="f-s">69元</p>
+					</div>
+					<div class="products t-red mr14">
+						<span class="mt230">小米圈铁耳机</span>
+						<p class="c-gray">动圈+动铁，双发声单元</p>
+						<p class="f-s">69元</p>
+					</div>
+					<div class="products t-green mr14">
+						<span class="mt230">小米路由器 青春版</span>
+						<p class="c-gray">将高性能路由器，凝聚于掌心大小</p>
+						<p class="f-s">79元</p>
+					</div>
+				</li>
+				<li>
+					<div class="products t-orange mr14">
+						<span class="mt230">小米智能插座 基础班</span>
+						<p class="c-gray">手机远程遥控，让普通电器变智能</p>
+						<p class="f-s">49元</p>
+					</div>
+					<div class="products t-yellow mr14">
+						<span class="mt230">小米空气净化器2</span>
+						<p class="c-gray">净化能力高达310m3/h</p>
+						<p class="f-s">699元</p>
+					</div>
+					<div class="products t-blue mr14">
+						<span class="mt230">小米智能插线板</span>
+						<p class="c-gray">手机远程控制家中电器，智能节电</p>
+						<p class="f-s">69元</p>
+					</div>
+					<div class="products t-red mr14">
+						<span class="mt230">小米圈铁耳机</span>
+						<p class="c-gray">动圈+动铁，双发声单元</p>
+						<p class="f-s">69元</p>
+					</div>
+					<div class="products t-green">
+						<span class="mt230">小米路由器 青春版</span>
+						<p class="c-gray">将高性能路由器，凝聚于掌心大小</p>
+						<p class="f-s">79元</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+<script>
+/*明星产品*/
+
+// $(".right-btn").click(
+// 	function(){
+// 		$(".products-bigbox").stop().animate({marginLeft:-1226},2000)//鼠标点击右箭头，products-bigbox向左移动1226px
+// 		}
+// )
+// $(".left-btn").click(
+// 	function(){
+// 		$(".products-bigbox").stop().animate({marginLeft:0},2000)//鼠标点击左箭头，products-bigbox回到原位置
+// 		}
+// )
+
+
+$(".right-btn").click(function(){
+	$(".products-bigbox").stop().animate({marginLeft:-1226},2000)
+})
+$(".left-btn").click(function(){
+	$(".products-bigbox").stop().animate({marginLeft:0},2000)
+})
+</script>
+</body>
+</html>

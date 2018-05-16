@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+	<style>
+	*{padding: 0;margin: 0;text-decoration: none;list-style: none}
+	a{display: inline-block;}
+		.box1{
+			width: 1226px;
+			height: 300px;
+			margin: 50px auto;
+			overflow: hidden;
+		}
+		span{
+			display: block;
+			font-size: 20px;
+			font-weight: bold;
+			cursor: pointer;
+			border: 1px solid #000;
+		}
+		.left-btn{
+			float: left;
+		}
+		.right-btn{
+			float: right;
+		}
+		.box1 .box2{
+			width: 3660px;
+			height: 300px;
+			float: left;
+		}
+		.box1 .box2 .box3{
+			margin-left: 10px;
+			float: left;
+			width: 234px;
+			height: 300px;
+		}
+	</style>
+</head>
+<body>
+		<span class="left-btn"> < </span>
+		<span class="right-btn"> > </span>
+	<div class="box1">
+		<ul class="box2">
+			<li>
+				<a href="" class="box3"><img src="images/dapei_icon01.png"></a>
+				<a href="" class="box3"><img src="images/dapei_icon01.png"></a>
+				<a href="" class="box3"><img src="images/dapei_icon01.png"></a>
+				<a href="" class="box3"><img src="images/dapei_icon01.png"></a>
+				<a href="" class="box3"><img src="images/dapei_icon01.png"></a>
+			</li>
+			<li>
+				<a href="" class="box3"><img src="images/dapei_icon02.png"></a>
+				<a href="" class="box3"><img src="images/dapei_icon02.png"></a>
+				<a href="" class="box3"><img src="images/dapei_icon02.png"></a>
+				<a href="" class="box3"><img src="images/dapei_icon02.png"></a>
+				<a href="" class="box3"><img src="images/dapei_icon02.png"></a>
+			</li>
+			<li>
+				<a href="" class="box3"><img src="images/dapei_icon01.png"></a>
+				<a href="" class="box3"><img src="images/dapei_icon01.png"></a>
+				<a href="" class="box3"><img src="images/dapei_icon01.png"></a>
+				<a href="" class="box3"><img src="images/dapei_icon01.png"></a>
+				<a href="" class="box3"><img src="images/dapei_icon01.png"></a>
+			</li>
+		</ul>
+		
+	</div>
+	<script>
+		$(".right-btn").click(function(){
+			$(".box2").stop().animate({marginLeft:-1226},2000)
+		})
+		$(".left-btn").click(function(){
+			$(".box2").stop().animate({marginLeft:0},2000)
+		})
+	</script>
+</body>
+</html>
